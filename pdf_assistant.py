@@ -12,13 +12,13 @@ from phi.vectordb.pgvector import PgVector2
 load_dotenv()
 
 collection = os.getenv('COLLECTION')
-
-db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai"
+llm_id = os.getenv('LLM')
+db_url = os.getenv('DB_URL')
 
 knowledge_base = PDFKnowledgeBase(
     path="pdfs",
     vector_db=PgVector2(collection=collection, db_url=db_url),
-    model=Groq(id="llama-3.1-70b-versatile"),
+    model=Groq(id=llm_id),
 )
 
 knowledge_base.load()
