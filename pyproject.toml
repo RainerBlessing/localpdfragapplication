@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "krishnaik"
+name = "PDF RAG application"
 version = "0.1.0"
 description = ""
 authors = ["Rainer Blessing <rainer.blessing@gmail.com>"]
