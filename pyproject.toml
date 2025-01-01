@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "krishnaik"
+version = "0.1.0"
+description = ""
+authors = ["Rainer Blessing <rainer.blessing@gmail.com>"]
+#readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+phidata = "^2.7.5"
+python-dotenv = "^1.0.1"
+groq = "^0.13.1"
+sqlalchemy = "^2.0.36"
+pgvector = "^0.3.6"
+psycopg = "^3.2.3"
+openai = "^1.58.1"
+pypdf = "^5.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.3"
+python-lsp-server = "^1.12.0"
+ruff = "^0.8.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
